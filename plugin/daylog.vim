@@ -1,5 +1,5 @@
 " Vim plugin for writing daylog note.
-" Last Change: 2017 Dec 29
+" Last Change: 2017/12/30
 " Maintainer:  Jiro <jiroron666@gmail.com>
 " License:     This file is placed in the public domain.
 
