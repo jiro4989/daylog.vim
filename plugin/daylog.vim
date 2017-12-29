@@ -3,8 +3,6 @@
 " Maintainer:  Jiro <jiroron666@gmail.com>
 " License:     This file is placed in the public domain.
 
-scriptencoding utf-8
-
 if exists('g:loaded_daylog')
   finish
 endif
