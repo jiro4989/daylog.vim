@@ -1,0 +1,17 @@
+*daylog.txt* Vim plugin for writing daylog note.
+
+Mappings:
+<Leader>dc
+    set contens text to `#contents`
+
+<Leader>dp
+    create new current date file
+    and paste text from template file.
+
+Commands:
+:SetContents
+    set contens text to `#contents`
+
+:PasteTemplateText
+    create new current date file
+    and paste text from template file.
