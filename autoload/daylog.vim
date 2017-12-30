@@ -53,7 +53,17 @@ function! daylog#paste_template_text() " {{{
   endwhile
   bdelete
 
-  let l:daylogFile = $HOME . "/Documents/daylogs/" .  strftime('%Y%m%d.md')
+  let l:documents_dir = $HOME . "/Documents/"
+  if !isdirectory(l:documents_dir)
+    call mkdir(l:documents_dir)
+  endif
+
+  let l:daylog_dir = l:documents_dir . "daylogs/"
+  if !isdirectory(l:daylog_dir)
+    call mkdir(l:daylog_dir)
+  endif
+
+  let l:daylogFile = l:daylog_dir .  strftime('%Y%m%d.md')
   if filereadable(l:daylogFile)
     " すでにファイルが存在するときは特に変更せずに開く
     exec ':e ' . escape(l:daylogFile, ' ')
